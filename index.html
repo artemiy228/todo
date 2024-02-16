@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      class="container d-flex flex-column justify-content-center text-center"
+    >
+      <h1>Todo List 2.0</h1>
+
+      <form
+        class="bg-secondary text-white rounded"
+        style="height: 400px; width: 400px; margin: 0 auto; overflow: auto"
+      >
+        <ul id="task-list" class="p-0 d-flex align-center flex-column">
+          <!-- <div class="empty-task m-3">
+            <h4>
+              <b>Список задач на сегодня пуст!</b>
+            </h4>
+          </div> -->
+        </ul>
+      </form>
+
+      <div
+        class="new-task bg-white mt-3 d-flex flex-column"
+        style="width: 400px; margin: 0 auto"
+      >
+        <h2 class="m-0">Добавить новую задачу</h2>
+        <hr />
+        <form class="task-form d-flex flex-column">
+          <input
+            type="text"
+            id="new-task"
+            placeholder="Текс задачи"
+            class="mb-3"
+          />
+          <button
+            id="add-new-task"
+            class="p-2 mb-1 bg-primary text-white border-0"
+            type="submit"
+          >
+            Добавить
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+  <style>
+    .done {
+      text-decoration: line-through;
+      opacity: 0.5;
+    }
+    button {
+      text-decoration: none;
+      border: none;
+    }
+    p {
+      margin: 0;
+    }
+  </style>
+</html>
